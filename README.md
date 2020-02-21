@@ -5,7 +5,10 @@
 Адрес API – http://b2b.cd-life.by/api/
 
 - [POST /getPrice/](getPrice.md)
-    - Получение прайс-листа
+    - Получение прайс-листа c группировкой
+    
+- [POST /getProducts/](getProducts.md)
+    - Получение прайс-листа без группировки
     
 - [POST /addOrder/](addOrder.md)
     - Добавление заказа
