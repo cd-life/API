@@ -59,6 +59,8 @@ Content-Type: application/json; charset=utf-8
                 "group": "2411",
                 "name": "Картридж CL-446XL &lt;MG2440, MG2540&gt;",
                 "article": "8284B001AA",
+                "brand": "Canon",
+                "warranty": "12",
                 "rest": "▀",
                 "price": 46.7,
                 "rrprice": ""
@@ -79,6 +81,8 @@ Content-Type: application/json; charset=utf-8
 | data.products.N.group | string | id группы товара |
 | data.products.N.name | string | Наименование товара |
 | data.products.N.article | string | SKU (артикул) товара |
+| data.products.N.brand | string | Производитель товара, null если не указан |
+| data.products.N.warranty | string | Гарантия месяцев, null если не указан |
 | data.products.N.rest | string | Наличие товара на складе ("▀" — мало, "▀▀" — достаточно, "▀▀▀" — много, "0" — товар не найден) |
 | data.products.N.price | number | Цена BYN с НДС |
 | data.products.N.rrprice | string | Рекомендованная розничная цена BYN с НДС |
@@ -152,6 +156,8 @@ Content-Type: application/json; charset=utf-8
                 "group": "2411",
                 "name": "Картридж CL-446XL &lt;MG2440, MG2540&gt;",
                 "article": "8284B001AA",
+                "brand": "Canon",
+                "warranty": "12",
                 "rest": "▀",
                 "price": 46.7,
                 "rrprice": ""
