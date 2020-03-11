@@ -21,3 +21,7 @@
 
 - [POST /getInvoice/](getInvoice.md)
     - Запрос счета на утвержденный заказ
+
+- [POST /serarchSn/](serarchSn.md)
+    - Проверка изделия на принадлежность к поставке
+
