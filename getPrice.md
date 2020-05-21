@@ -171,3 +171,30 @@ Content-Type: application/json; charset=utf-8
     "code": "ok"
 }
 ```
+### Пример запроса PHP-cURL
+
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "http://b2b.cd-life.by/api/getPrice/",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS => array('id' => '["SP00014230"]'),
+  CURLOPT_HTTPHEADER => array(
+    "Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l",
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+```
